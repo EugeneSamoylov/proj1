@@ -1,0 +1,71 @@
+<html>
+<style>
+table.layout{
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  style="color:blue";
+}
+
+td.menu{
+  background-color: YELLOW;
+  width: 33%;
+  border: 5px solid white;
+}
+
+td.menu:hover{
+  background-color: #a5a5f5
+}
+</style>
+<script type="text/javascript">
+    function show_pic() {
+        //alert('hi');
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        var c3_elem = document.getElementById("c3");
+        c1_elem.style.display = 'none';
+        c2_elem.style.display = 'block';
+        c3_elem.style.display = 'none';
+    }
+    function show_text() {
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        var c3_elem = document.getElementById("c3");
+        c1_elem.style.display = 'block';
+        c2_elem.style.display = 'none';
+        c3_elem.style.display = 'none';
+    }
+    function show_game() {
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        var c3_elem = document.getElementById("c3");
+        c1_elem.style.display = 'none';
+        c2_elem.style.display = 'none';
+        c3_elem.style.display = 'block';
+    }
+ 
+
+ 
+
+</script>
+
+<body> 
+
+ <table class="layout">
+   <tr>
+      <td class="menu" onclick="show_text()">Info</td>
+      <td class="menu" onclick="show_pic()"> Flag</td>
+      <td class="menu" onclick="show_game()">Game</td>
+   </tr>
+   <tr>
+      <td colspan="3">
+        <div id="c1">BRAZIL</div>
+        <div id="c2" style="display:none"><img src="images.jpg"></div>
+        <div id="c3" style="display:none">a game will be here</div>
+      </td>
+   </tr>
+ </table>
+
+</body>
+
+</html>
