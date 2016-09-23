@@ -1,0 +1,78 @@
+<html>
+
+ <title>BRAZIL</title>
+
+<style>
+table.layout{
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  style="color:blue";
+
+}
+
+td.menu{
+  background-color: YELLOW;
+  height: 50;
+  width: 33%;
+  border: 5px solid green;
+
+}
+
+td.menu:hover{
+  background-color: #0040FF;
+}
+</style>
+<script type="text/javascript">
+    function show_pic() {
+        //alert('hi');
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        var c3_elem = document.getElementById("c3");
+        c1_elem.style.display = 'none';
+        c2_elem.style.display = 'block';
+        c3_elem.style.display = 'none';
+    }
+    function show_text() {
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        var c3_elem = document.getElementById("c3");
+        c1_elem.style.display = 'block';
+        c2_elem.style.display = 'none';
+        c3_elem.style.display = 'none';
+    }
+    function show_game() {
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        var c3_elem = document.getElementById("c3");
+        c1_elem.style.display = 'none';
+        c2_elem.style.display = 'none';
+        c3_elem.style.display = 'block';
+    }
+ 
+
+ 
+
+</script>
+
+
+<body> 
+
+ <table class="layout">
+   <tr>
+      <td class="menu" onclick="show_text()">Info</td>
+      <td class="menu" onclick="show_pic()"> Flag</td>
+      <td class="menu" onclick="alert('a game will be here')">Game</td>                            
+      
+   <tr>
+      <td colspan="3">
+        <div id="c1">Brazil, officially the Federative Republic of Brazil  is the largest country in both South America and Latin America. As the world's fifth-largest country by both area and population, it is the largest country to have Portuguese as an official language–and the only one in the Americas. Bounded by the Atlantic Ocean on the east, Brazil has a coastline of 7,491 km (4,655 mi). It borders all other South American countries except Ecuador and Chile and covers 47.3% of the continent's land area. Its Amazon River basin includes a vast tropical forest, home to diverse wildlife, a variety of ecological systems, and extensive natural resources spanning numerous protected habitats. This unique environmental heritage makes Brazil one of 17 megadiverse countries, and is the subject of significant global interest and debate regarding deforestation and environmental protection.</div>
+        <div id="c2" style="display:none"><img src="images.jpg"></div>
+        <div id="c3" style="display:none">a game will be here</div>
+      </td>
+   </tr>
+ </table>
+
+</body>
+
+</html>
