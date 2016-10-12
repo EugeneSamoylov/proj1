@@ -1,0 +1,31 @@
+table.layout{
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  style="color:blue";
+}
+td.menu{
+  background-color: YELLOW;
+  height: 50;
+  width: 33%;
+  border: 5px solid green;
+}
+td.menu:hover{
+  background-color: #0040FF;
+}
+ body {
+    margin: 0; 
+   }
+   .pepper {
+    background: blue; 
+    min-height: 100px;
+    font: 60px Impact, sans-serif; 
+    color: #fff; 
+    white-space: nowrap;
+    padding-left: 20px; 
+    position: relative; 
+   }
+   .pepper span {
+    position: absolute;
+    bottom: -13px; 
+   }
