@@ -1,0 +1,63 @@
+<html>
+ <head>
+<meta charset="utf-8">
+
+ <title>BRAZIL</title>
+ 
+ 
+ <link rel="stylesheet" type="text/css" href="style.css">
+
+<script src="script.js" type="text/javascript"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        var myMap, 
+            myPlacemark;
+
+        function init(){ 
+            myMap = new ymaps.Map("map", {
+                center: [55.76, 37.64],
+                zoom: 7
+            }); 
+            
+            myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+                hintContent: 'Москва!',
+                balloonContent: 'Столица России'
+            });
+            
+            myMap.geoObjects.add(myPlacemark);
+        }
+        </script>
+  </head>
+<body bgcolor="#F3F781"> 
+  
+   <div class="pepper"><span>Brazil</span></div>
+
+   
+ <table class="layout">
+   <tr>
+      <td class="menu" onclick="show_text()">Info</td>
+      <td class="menu" onclick="show_pic()"> Flag</td>
+      <td class="menu" onclick="show_game()">Game</td>                            
+    </tr> 
+   <tr>
+      <td colspan="3">
+        <div id="c1">Brazil, officially the Federative Republic of Brazil  is the largest country in both South America and Latin America. As the world's fifth-largest country by both area and population, it is the largest country to have Portuguese as an official language–and the only one in the Americas. Bounded by the Atlantic Ocean on the east, Brazil has a coastline of 7,491 km (4,655 mi). It borders all other South American countries except Ecuador and Chile and covers 47.3% of the continent's land area. Its Amazon River basin includes a vast tropical forest, home to diverse wildlife, a variety of ecological systems, and extensive natural resources spanning numerous protected habitats. This unique environmental heritage makes Brazil one of 17 megadiverse countries, and is the subject of significant global interest and debate regarding deforestation and environmental protection.</div>
+        <div id="c2" style="display:none">   <div text-align:"center" id="map" style="width: 600px; height: 400px"></div></div>
+        <div id="c3" style="display:none">
+       <input type="checkbox" id="Checkbox1"><label for="check1">Москва</label><br>
+       <input type="checkbox" id="Checkbox2"><label for="check1">Салвадор</label><br>
+       <input type="checkbox" id="Checkbox3"><label for="check1">Ньюкастл</label><br>
+       <input type="checkbox" id="Checkbox4"><label for="check1">Сан-Паулу</label><br>
+
+   <p><input type="radio" name="вопрос 2">2<br/>
+   <input type="radio" name="вопрос 2">3<br/>
+   <input type="radio" name="вопрос 2">4<br/>
+
+   столица Бразилии: <input type="text">
+ </div>
+      </td>
+   </tr>
+ </table>
+</body>
+</html>
